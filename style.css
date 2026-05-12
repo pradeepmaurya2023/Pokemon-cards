@@ -332,6 +332,11 @@ select {
 .box-4 span i{
     color: purple;
 }
+
+.line{
+    border: 1px solid rgba(57, 56, 56, 0.192);
+    height: 50%;
+}
 footer {
     text-align: center;
     color: #869d8c;
