@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header will contain hamburger icon, logo, theme icon -->
+    <header>
+        <nav>
+            <span class="nav-icons icons hamburger"><i class="ri-menu-line"></i></span>
+            <img src='./static/pokemon-logo.png' alt="pokemon-logo">
+            <span class="nav-icons icons theme"><i class="ri-sun-line"></i></span>
+        </nav>
+    </header>
+    <!-- main section containing everything -->
+    <main>
+        <!-- div for searchingn and sorting -->
+        <div class="search-area">
+            <span class="left-input">
+                <i class="ri-search-line"></i>
+                <input type="text" name="search" placeholder="Search for a Pokémon...">
+            </span>
+
+            <div class="right-input">
+                <span class="filter">
+                    <select name="filter" id="">
+                        <option value="Filter by types (1)">Filter by types (1)</option>
+                    </select>
+                </span>
+                <span class="icons">
+                    <i class="ri-sort-desc"></i>
+                </span>
+            </div>
+        </div>
+        <!-- div for cards -->
+        <div class="card-container">
+            <div class="card card-1">
+                <!-- p tag for num -->
+                <span class="card-top">
+                    <span>#0908</span>
+                    <!-- wishlist icon -->
+                    <span class="wishlist-icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                </span>
+                <!-- type icon -->
+                <span class="type-icon">
+                    <i class="ri-leaf-fill"></i>
+                </span>
+                <!-- img -->
+                <img src="https://static.wikia.nocookie.net/pokemon/images/6/6f/0908Meowscarada.png"
+                    alt="0908Meowscarada Pokemon">
+                <!-- h2 title -->
+                <h2>Meowscarada</h2>
+                <div class="card-bottom">
+                    <!-- type svg -->
+                    <span class="bullet">
+                        <i class="ri-leaf-fill"></i>
+                        <span>GRASS</span>
+                    </span>
+
+                    <span class="arrow"><i class="ri-arrow-right-long-line"></i></span>
+                    <!-- span icon -->
+                </div>
+            </div>
+            <div class="card card-2">
+                <!-- p tag for num -->
+                <span class="card-top">
+                    <span>#0624</span>
+                    <!-- wishlist icon -->
+                    <span class="wishlist-icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                </span>
+                <!-- type icon -->
+                <span class="type-icon">
+                    <i class="ri-settings-fill"></i>
+                </span>
+                <!-- img -->
+                <img src="https://in.portal-pokemon.com/play/resources/pokedex/img/pm/d91d960991e5b1607aba9bc2c791851654582ada.png"
+                    alt="0624Pawniard Pokemon">
+                <!-- h2 title -->
+                <h2>Pawniard</h2>
+                <div class="card-bottom">
+                    <!-- type svg -->
+                    <span class="bullet">
+                        <i class="ri-settings-fill"></i>
+                        <span>DARK/STEEL</span>
+                    </span>
+
+                    <span class="arrow"><i class="ri-arrow-right-long-line"></i></span>
+                    <!-- span icon -->
+                </div>
+            </div>
+            <div class="card card-3">
+                <!-- p tag for num -->
+                <span class="card-top">
+                    <span>#0229</span>
+                    <!-- wishlist icon -->
+                    <span class="wishlist-icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                </span>
+                <!-- type icon -->
+                <span class="type-icon">
+                    <i class="ri-fire-fill"></i>
+                </span>
+                <!-- img -->
+                <img src="https://in.portal-pokemon.com/play/resources/pokedex/img/pm/13586581e62759dc41f668168c9f51c9a75c9356.png"
+                    alt="0229 Houndoom Pokemon">
+                <!-- h2 title -->
+                <h2>Houndoom</h2>
+                <div class="card-bottom">
+                    <!-- type svg -->
+                    <span class="bullet">
+                        <i class="ri-fire-fill"></i>
+                        <span>DARK/FIRE</span>
+                    </span>
+
+                    <span class="arrow"><i class="ri-arrow-right-long-line"></i></span>
+                    <!-- span icon -->
+                </div>
+            </div>
+            <div class="card card-4">
+                <!-- p tag for num -->
+                <span class="card-top">
+                    <span>#0686</span>
+                    <!-- wishlist icon -->
+                    <span class="wishlist-icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                </span>
+                <!-- type icon -->
+                <span class="type-icon">
+                    <i class="ri-water-flash-fill"></i>
+                </span>
+                <!-- img -->
+                <img src="https://in.portal-pokemon.com/play/resources/pokedex/img/pm/f3480489a6ad7ff98fbd0708ecf9b97cbe5f9b24.png"
+                    alt="0686Inkay Pokemon">
+                <!-- h2 title -->
+                <h2>Inkay</h2>
+                <div class="card-bottom">
+                    <!-- type svg -->
+                    <span class="bullet">
+                        <i class="ri-water-flash-fill"></i>
+                        <span>DARK/PSYCHIC</span>
+                    </span>
+
+                    <span class="arrow"><i class="ri-arrow-right-long-line"></i></span>
+                    <!-- span icon -->
+                </div>
+            </div>
+            <div class="card card-5">
+                <!-- p tag for num -->
+                <span class="card-top">
+                    <span>#0025</span>
+                    <!-- wishlist icon -->
+                    <span class="wishlist-icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                </span>
+                <!-- type icon -->
+                <span class="type-icon">
+                    <i class="ri-flashlight-fill"></i>
+                </span>
+                <!-- img -->
+                <img src="https://in.portal-pokemon.com/play/resources/pokedex/img/pm/2b3f6ff00db7a1efae21d85cfb8995eaff2da8d8.png"
+                    alt="0908Meowscarada Pokemon">
+                <!-- h2 title -->
+                <h2>Pikachu</h2>
+                <div class="card-bottom">
+                    <!-- type svg -->
+                    <span class="bullet">
+                        <i class="ri-flashlight-fill"></i>
+                        <span>Electric</span>
+                    </span>
+
+                    <span class="arrow"><i class="ri-arrow-right-long-line"></i></span>
+                    <!-- span icon -->
+                </div>
+            </div>
+        </div>
+        <!-- div for extras -->
+        <div class="banner">
+            <div class="box box-1">
+                <span><img src="./static/pokeball.png" alt=""></span>
+                <div class="box-content">
+                    <h3>Explore</h3>
+                    <p>Discover all your favorite Pokémon</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="box box-2">
+                <span><i class="ri-leaf-fill"></i></span>
+                <div class="box-content">
+                    <h3>Filter</h3>
+                    <p>Find Pokémon by types and abilities</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="box box-3">
+                <span><i class="ri-star-fill"></i></span>
+                <div class="box-content">
+                    <h3>Collection</h3>
+                    <p>Save and manage your collection</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="box box-4">
+                <span><i class="ri-line-chart-fill"></i></span>
+                <div class="box-content">
+                    <h3>Stats</h3>
+                    <p>View Stats and learn about Pokémon</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer  -->
+    <footer>
+        <span><img src="./static/pokeball.png" alt="pokeball png"></span>
+        <p>&copy; 2024 Pokémon. ALl rights reserved.</p>
+    </footer>
+</body>
+
+</html>

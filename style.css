@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Mono", monospace;
+}
+
+header,
+nav,
+.card-container {
+    width: 100%;
+}
+
+nav,
+.search-area {
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 120px;
+}
+
+.icons,
+.search-area span {
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00000024;
+    cursor: pointer;
+}
+
+i {
+    font-size: 28px;
+    color: #376be5;
+}
+
+.left-input,
+.right-input {
+    display: flex;
+    align-items: center;
+}
+
+.search-area .left-input,
+.right-input .filter {
+    border-radius: 30px;
+}
+
+.left-input {
+    width: 30%;
+    gap: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.left-input i {
+    font-size: 20px;
+}
+
+.left-input input {
+    width: 90%;
+}
+
+.right-input {
+    gap: 20px;
+}
+
+.right-input span i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input,
+select {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #4165ba;
+}
+
+.right-input .filter select {
+    padding: 0 60px 0 10px;
+    font-weight: 200;
+    appearance: none;
+    background-image: url('./static/arrow-drop-down-line.svg');
+    background-repeat: no-repeat;
+    background-position: 99%;
+    background-size: 35px;
+}
+
+.card-container {
+    padding: 60px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 18%;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        -2px 0 6px rgba(0, 0, 0, 0.12),
+        2px 0 6px rgba(0, 0, 0, 0.12),
+        0 -2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* custom card variation */
+.card-1 {
+    box-shadow:
+        -2px 0 6px rgba(157, 156, 156, 0.12),
+        2px 0 6px rgba(168, 166, 166, 0.12),
+        0 -2px 6px rgba(127, 127, 127, 0.42),
+        0 5px 3px rgba(99, 233, 4, 0.88);
+}
+
+.card-2 {
+    box-shadow:
+        -2px 0 6px rgba(157, 156, 156, 0.12),
+        2px 0 6px rgba(168, 166, 166, 0.12),
+        0 -2px 6px rgba(127, 127, 127, 0.42),
+        0 5px 3px rgba(45, 48, 66, 0.88);
+}
+
+.card-3 {
+    box-shadow:
+        -2px 0 6px rgba(157, 156, 156, 0.12),
+        2px 0 6px rgba(168, 166, 166, 0.12),
+        0 -2px 6px rgba(127, 127, 127, 0.42),
+        0 5px 3px rgba(233, 96, 4, 0.88);
+}
+
+.card-4 {
+    box-shadow:
+        -2px 0 6px rgba(157, 156, 156, 0.12),
+        2px 0 6px rgba(168, 166, 166, 0.12),
+        0 -2px 6px rgba(127, 127, 127, 0.42),
+        0 5px 3px rgba(108, 126, 227, 0.88);
+}
+
+.card-5 {
+    box-shadow:
+        -2px 0 6px rgba(157, 156, 156, 0.12),
+        2px 0 6px rgba(168, 166, 166, 0.12),
+        0 -2px 6px rgba(127, 127, 127, 0.42),
+        0 5px 3px rgba(239, 196, 38, 0.88);
+}
+
+.card-top,
+.card-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(176, 166, 166);
+    font-weight: 900;
+}
+
+.wishlist-icon {
+    padding: 8px 8px 6px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00000053;
+}
+
+.card-top i {
+    color: rgb(57, 55, 55);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.type-icon {
+    position: absolute;
+    top: 50px;
+}
+
+.card .type-icon i {
+    font-size: 18px;
+}
+
+.card-1 .type-icon i,
+.card-1 .card-bottom .bullet i {
+    color: green;
+}
+
+.card-2 .type-icon i,
+.card-2 .card-bottom .bullet i {
+    color: rgba(19, 34, 49, 0.86);
+}
+
+.card-3 .type-icon i,
+.card-3 .card-bottom .bullet i {
+    color: rgb(218, 129, 19);
+}
+
+.card-4 .type-icon i,
+.card-4 .card-bottom .bullet i {
+    color: rgb(84, 92, 173);
+}
+
+.card-5 .type-icon i,
+.card-5 .card-bottom .bullet i {
+    color: rgb(214, 177, 52);
+}
+
+.card img {
+    background: linear-gradient(24deg, #abddb50f, #869d8c3d);
+    border-radius: 50%;
+}
+
+.card h2 {
+    margin: 15px 0;
+}
+
+
+.card-bottom .bullet {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+}
+
+.card-1 .bullet {
+    background-color: rgba(175, 215, 175, 0.47);
+    color: green;
+}
+
+.card-2 .bullet {
+    background-color: rgba(81, 90, 99, 0.307);
+    color: rgba(19, 34, 49, 0.86);
+}
+
+.card-3 .bullet {
+    background-color: rgba(218, 128, 19, 0.354);
+    color: rgb(218, 129, 19);
+}
+
+.card-4 .bullet {
+    background-color: rgba(84, 91, 173, 0.353);
+    color: rgb(84, 92, 173);
+}
+
+.card-5 .bullet {
+    background-color: rgba(214, 176, 52, 0.384);
+    color: rgb(214, 177, 52);
+}
+
+
+.card-bottom .arrow {
+    padding: 8px 8px 6px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #00000053;
+}
+
+.card-bottom .bullet i {
+    color: green;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.card-bottom .arrow i {
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+}
+
+.banner {
+    width: 80%;
+    margin: 50px auto;
+    height: 150px;
+    box-shadow: 0 0 5px #00000053;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .box {
+    width: 15%;
+    font-size: 15px;
+    color: #3d3c3cd3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box span{
+    
+    background-color: #a7a9ad6f;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.box span img{
+    height: 30px;
+}
+.box span i{
+    font-size: 30px;
+}
+.banner .box h3 {
+    color: black;
+}
+.box-2 span{
+    background-color: rgba(38, 219, 38, 0.302);
+}
+.box-2 span i{
+    color: green;
+}
+.box-3 span{
+    background-color: rgba(241, 208, 18, 0.201);
+}
+.box-3 span i{
+    color: gold;
+}
+.box-4 span{
+    background-color: rgba(128, 0, 128, 0.16);
+}
+.box-4 span i{
+    color: purple;
+}
+footer {
+    text-align: center;
+    color: #869d8c;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+footer img {
+    height: 20px;
+}
